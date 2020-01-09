@@ -1,0 +1,209 @@
+* {
+    -webkit-user-select: none;  /* Chrome 49+ */
+    -moz-user-select: none;     /* Firefox 43+ */
+    -ms-user-select: none;      /* No support yet */
+    user-select: none;          /* Likely future */   
+}
+
+nav {
+    background-color: #3ad176;
+    margin-bottom: 10px;
+    color: #000;
+    border-radius: 5px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 10px;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+nav ul li.active {
+    border-bottom: 1px solid #000;
+}
+
+nav ul li:hover {
+    border-bottom: 1px solid #000;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.header {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.header form input:not(:last-child) {
+    margin-right: 10px;
+    height: 25px;
+    line-height: 18px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid #999;
+}
+
+.header form input:nth-child(1) {
+    width: 150px;
+}
+
+.header form input:nth-child(2) {
+    width: 150px;
+}
+
+.header form input:nth-child(3) {
+    width: 200px;
+}
+
+.header form select {
+    height: 29px;
+    line-height: 18px;
+    font-size: 14px;
+    background-color: #fff;
+    margin-right: 5px;
+}
+
+.header form input:last-child {
+    width: 100px;
+    height: 25px;
+    line-height: 18px;
+    font-size: 14px;
+    border: 1px solid #30bbbb;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #30bbbb;
+}
+
+.header button {
+    width: 100px;
+    height: 25px;
+    line-height: 18px;
+    font-size: 14px;
+    border: 1px solid #3e74ef;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #3e74ef;
+    position: absolute;
+    right: 20px;
+    top: 2px;
+    color: #fff;
+}
+
+
+.table-wrapper {
+    height: 500px;
+    overflow: scroll;
+    border: 1px solid #dcdcdc;
+    box-shadow: 4px 4px 5px #999;
+   display: inline-block;
+   padding: 10px;
+    margin-top: 10px;
+}
+
+thead tr:first-child {
+    background-color:#3ad076;
+}
+
+thead tr th:first-child {
+    cursor: pointer;
+}
+
+thead tr:last-child th{
+    text-align: left;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #c7ddec;
+}
+
+td, th {
+    padding: 10px;
+    width: 160px;
+}
+
+th:last-child {
+    width: 60px;
+    text-align: center;
+}
+
+td {
+    font-size: 16px;
+    line-height: 24px;
+    white-space: nowrap;
+    overflow: scroll;
+}
+
+td:first-child {
+    cursor: pointer;
+}
+
+td:last-child {
+    width: 60px;
+    text-align: center;
+    white-space: nowrap;
+    overflow: scroll;
+    display: inline-block;
+}
+
+td:last-child button, .show-all {
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+td:last-child button { 
+    border: 1px solid #e887a2;
+    background-color: #e887a2;
+}
+
+td:last-child input {
+    cursor: pointer;
+}
+
+td:last-child button:active, .show-all:active {
+    outline: none;
+
+}
+
+td:last-child button:focus, .show-all:focus {
+    outline: none;
+}
+
+td::-webkit-scrollbar { width: 0 !important; height: 0 !important; }
+
+.hide {
+    opacity: 0;
+}
+
+.hidden {
+    display: none;
+}
+
+.modal {
+    position: fixed;
+    z-index: 999;
+    width: 400px;
+    height: 100px;
+    top: 50%;
+    transform: translate(-50%);
+    left: 50%;
+    padding: 40px 0px 0px 0px;
+    text-align: center;
+    background-color: white;
+    box-shadow: 4px 4px 5px #999;
+    border-radius: 8px;
+}
+
+.full-table {
+    height: auto;
+    margin: 0 auto;
+    display: table;
+}
+
